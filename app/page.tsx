@@ -1,24 +1,29 @@
-
+// 'use client'
 import {Navbar} from "@/components/navbar/Navbar";
 import {Button} from "@nextui-org/button";
 import {Input} from "@nextui-org/input";
-import {Whs} from "@/app/sd/Whs";
 
 export default function Home() {
+    // console.log('Helloo')
+    console.log('from page')
 
 
   return (
     <>
 
         <header>
-            <Whs></Whs>
-            {/*<Navbar></Navbar>*/}
-            <h1>Hello World</h1>
+            <Navbar></Navbar>
         </header>
-        <h1>Hello</h1>
-        <Input></Input>
-        <Button>Sssss</Button>
-        <main></main>
+        <main>
+            <h1>Hello</h1>
+            <form  className='flex flex-col sm:flex-row gap-3 w-screen box-border pl-5 pr-5'>
+                <Input label='Name'></Input>
+                <Input label='Email'></Input>
+                <Input label='Password' type='password'></Input>
+                <Button>Submit</Button>
+            </form>
+
+        </main>
         <footer></footer>
     </>
   )

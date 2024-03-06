@@ -1,3 +1,4 @@
-nav h1 {
-    background-color: grey;
+.navbar {
+    color:blue;
+    align-items: center;
 }
